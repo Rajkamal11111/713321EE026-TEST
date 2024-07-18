@@ -1,0 +1,67 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Raleway:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle, #ff6f61, #de6161);
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    border: 3px solid black;
+    padding: 40px;
+    background-color: black;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#guessInput {
+    padding: 12px;
+    font-size: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    border: 2px solid #ff6f61;
+    width: 80%;
+    max-width: 400px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 20px;
+    margin: 15px;
+    cursor: pointer;
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'Fredoka One', cursive;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #de6161;
+    transform: scale(1.1);
+}
+
+#result {
+    margin-top: 25px;
+    font-size: 22px;
+    color:#fff;
+    font-weight: 700;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
